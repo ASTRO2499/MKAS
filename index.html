@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malavika KJ | Futuristic Portfolio</title>
+    <meta name="description" content="Portfolio of Malavika KJ - Engineer by study & designer by passion.">
+    
+    <!-- Google Fonts: Orbitron for headings, Outfit for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Custom Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo gradient-text">M.KJ_</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link nav-btn">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section container">
+            <div class="hero-content">
+                <p class="hero-greeting animate-slide-up">Welcome to my digital space</p>
+                <h1 class="hero-title animate-slide-up" style="animation-delay: 0.1s;">Hi, I'm <span class="gradient-text">Malavika KJ</span></h1>
+                <h2 class="hero-subtitle animate-slide-up" style="animation-delay: 0.2s;">
+                    Designer | ComSoc Kerala Chapter | IEEE VISAT SB Chairperson | ECE Undergrad
+                </h2>
+                <p class="hero-description animate-slide-up" style="animation-delay: 0.3s;">
+                    Engineer by study & designer by passion — always learning, creating, and growing at VISAT Engineering College.
+                </p>
+                <div class="hero-buttons animate-slide-up" style="animation-delay: 0.4s;">
+                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#" class="btn btn-glass">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-in" style="animation-delay: 0.5s;">
+                <div class="profile-card">
+                    <div class="profile-glow-ring"></div>
+                    <div class="profile-image-container">
+                        <img src="profile.jpg" alt="Malavika KJ" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section container">
+            <h2 class="section-title" data-scroll>About Me</h2>
+            <div class="about-content glass-panel" data-scroll>
+                <div class="about-text">
+                    <p>
+                        An ECE undergraduate with a strong interest in <span class="gradient-text">leadership, creativity, and innovation</span>. 
+                        Currently serving as the Chair of the IEEE Student Branch, contributing to initiatives that encourage 
+                        technical growth and creative thinking.
+                    </p>
+                    <p>
+                        A graphic designer who enjoys blending design with technology while actively collaborating on 
+                        student-driven projects and impactful ideas.
+                    </p>
+                </div>
+                <div class="about-icons">
+                    <div class="icon-item"><i class="fas fa-lightbulb"></i><span>Innovation</span></div>
+                    <div class="icon-item"><i class="fas fa-paint-brush"></i><span>Design</span></div>
+                    <div class="icon-item"><i class="fas fa-users"></i><span>Leadership</span></div>
+                    <div class="icon-item"><i class="fas fa-microchip"></i><span>Engineering</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roles Section -->
+        <section id="roles" class="roles-section container">
+            <h2 class="section-title" data-scroll>Identities & Roles</h2>
+            <div class="roles-grid">
+                <div class="role-card glass-panel" data-scroll>
+                    <i class="fas fa-palette role-icon"></i>
+                    <h3>Designer</h3>
+                    <p>Creating visual narratives and functional aesthetics.</p>
+                </div>
+                <div class="role-card glass-panel" data-scroll style="transition-delay: 0.1s">
+                    <i class="fas fa-globe role-icon"></i>
+                    <h3>ComSoc Kerala Chapter</h3>
+                    <p>Active contributor and community builder.</p>
+                </div>
+                <div class="role-card glass-panel" data-scroll style="transition-delay: 0.2s">
+                    <i class="fas fa-users-cog role-icon"></i>
+                    <h3>IEEE VISAT SB Chairperson</h3>
+                    <p>Leading student-driven technical initiatives.</p>
+                </div>
+                <div class="role-card glass-panel" data-scroll style="transition-delay: 0.3s">
+                    <i class="fas fa-microchip role-icon"></i>
+                    <h3>ECE Undergraduate</h3>
+                    <p>Bridging hardware, software, and systems.</p>
+                </div>
+                <div class="role-card glass-panel" data-scroll style="transition-delay: 0.4s">
+                    <i class="fas fa-people-arrows role-icon"></i>
+                    <h3>Creative Collaborator</h3>
+                    <p>Turning abstract ideas into impactful projects.</p>
+                </div>
+                <div class="role-card glass-panel" data-scroll style="transition-delay: 0.5s">
+                    <i class="fas fa-flag role-icon"></i>
+                    <h3>Student Leader</h3>
+                    <p>Guiding teams and fostering technical growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section container">
+            <h2 class="section-title" data-scroll>Core Competencies</h2>
+            <div class="skills-container">
+                <div class="skills-column glass-panel" data-scroll>
+                    <h3 class="skills-subtitle">Technical & Design</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Graphic Design</span><span>95%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Branding & Visual Comm</span><span>90%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Engineering Perspective</span><span>85%</span></div>
+                        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+                    </div>
+                </div>
+                <div class="skills-column glass-panel" data-scroll style="transition-delay: 0.2s">
+                    <h3 class="skills-subtitle">Leadership & Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Event Coordination</span>
+                        <span class="skill-tag">Creative Thinking</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Technical Initiatives</span>
+                        <span class="skill-tag">Project Participation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="leadership" class="timeline-section container">
+            <h2 class="section-title" data-scroll>Leadership Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>IEEE VISAT SB Chairperson</h3>
+                        <span class="timeline-date">Present</span>
+                        <p>Leading the student branch, organizing technical events, and fostering a culture of innovation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>ComSoc Kerala Chapter</h3>
+                        <span class="timeline-date">Ongoing</span>
+                        <p>Active involvement in telecommunications and networking community initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Student-Led Initiatives</h3>
+                        <span class="timeline-date">2023 - Present</span>
+                        <p>Spearheading various technical and creative projects on campus.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Graphic Design Contributions</h3>
+                        <span class="timeline-date">2022 - Present</span>
+                        <p>Creating visual branding, layout designs, and posters for collegiate tech events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section id="projects" class="projects-section container">
+            <h2 class="section-title" data-scroll>Creative Works</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-scroll>
+                    <div class="project-img">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div class="project-info glass-panel">
+                        <h3>Branding Design</h3>
+                        <p>Visual identities for tech events.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-scroll style="transition-delay: 0.1s">
+                    <div class="project-img">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="project-info glass-panel">
+                        <h3>Event Posters</h3>
+                        <p>Promotional graphics for IEEE events.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-scroll style="transition-delay: 0.2s">
+                    <div class="project-img">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-info glass-panel">
+                        <h3>Student Initiatives</h3>
+                        <p>Collaborative project planning.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-scroll style="transition-delay: 0.3s">
+                    <div class="project-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-info glass-panel">
+                        <h3>Social Media Creatives</h3>
+                        <p>Engaging digital content.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Motto Section -->
+        <section class="motto-section container">
+            <div class="motto-container" data-scroll>
+                <div class="orbiting-lines">
+                    <div class="orbit-1"></div>
+                    <div class="orbit-2"></div>
+                </div>
+                <h2 class="motto-text">
+                    <span class="sparkle">✨</span>
+                    Engineer by study & designer by passion — 
+                    <span class="gradient-text">always learning, creating, and growing.</span>
+                </h2>
+            </div>
+        </section>
+
+        <footer class="footer glass-panel">
+        <div class="footer-content container">
+            <div class="footer-logo logo gradient-text">M.KJ_</div>
+            <div class="footer-details">
+                <p>Malavika KJ &copy; 2026</p>
+                <p>VISAT Engineering College</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="#hero" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title" data-scroll>Get In Touch</h2>
+            <div class="contact-container glass-panel" data-scroll>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required class="form-input">
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required class="form-input">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required class="form-input"></textarea>
+                        <label for="message" class="form-label">Message</label>
+                        <div class="input-glow"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Connect Digitally</h3>
+                    <p>Open for collaborations, design projects, and engineering discussions.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
